@@ -3,8 +3,9 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
     console.log('I am ready!');
+	
 });
-
+async function run() {
  async def status_task():
     while True:
         await client.change_presence(activity=discord.Game(name="Mega Man V"))
@@ -17,6 +18,9 @@ client.on('ready', () => {
         await asyncio.sleep(300)
         await client.change_presence(activity=discord.Game(name="Mega Man 8 Bit Deathmatch"))
         await asyncio.sleep(300)
+}
+
+run().catch(console.error.bind(console))
 
 client.on('message', message => {
     if (message.content === 'ping') {
