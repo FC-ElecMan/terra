@@ -1,1 +1,1 @@
-web: gunicorn terra-from-megaman:node bot.js
+web: gunicorn bot:app
