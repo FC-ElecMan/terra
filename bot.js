@@ -1,6 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-
+heroku ps:scale web=0
+heroku ps:scale worker=1
  
 
 client.on('ready', () => {
