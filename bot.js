@@ -21,12 +21,7 @@ if (message.content === 'Terra') {
  if (message.content === 'Celeste') {
 	message.react('806291414194847805');
 } 
-       })
-
-});
-
-
- 
+       });
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);//BOT_TOKEN is the Client Secret
