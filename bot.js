@@ -21,7 +21,7 @@ if (message.content === 'Terra') {
  if (message.content === 'Celeste') {
 	message.react('806291414194847805');
 } 
-       } 
+       })
 
 });
 
